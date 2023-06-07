@@ -7,7 +7,7 @@
 4. Добавить файл под гит. - ```git add . (либо git add new.json)```
 5. Закоммитить файл. - ```git commit -m “create_file”```
 6. Отправить файл на внешний GitHub репозиторий. - ```git push```
-7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. - ```cat > new.json  { "name" : "Kovalskaya Alena", "age" : 27, "pets" : 1, "sallary" : 1000 }```
+7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. - ```cat >> new.json  { "name" : "Kovalskaya Alena", "age" : 27, "pets" : 1, "sallary" : 1000 }```
 8. Отправить изменения на внешний репозиторий. - ```git add new.json; git commit -m “mod”; git push```
 9. Создать файл preferences.json - ```cat > preferences.json```
 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
@@ -26,7 +26,7 @@
 "skills" : "test design techniques, working with Terminal, mySQL, Postman, Android studio"
 }
 ```
-15. Отправить сразу 2 файла на внешний репозиторий. - ```git add .```
+15. Отправить сразу 2 файла на внешний репозиторий. - ```git add .; git commit -m "creating_2_files"; git push```
 16. На веб интерфейсе создать файл bug_report.json. - ```Add file/Create new file```
 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
@@ -53,7 +53,8 @@
 ```
  28. Отправить изменения на внешний репозиторий. ```git add ‘new.xml’; git commit -m “update_xml”; git push```
  29. Создать файл preferences.xml ```cat > preferences.xml``` 
- 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. 
+ ```git add 'preferences.xml'; git commit -m “cretae_preference_xml”;```
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. ```cat >> preferences.xml```
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <info>
@@ -64,12 +65,15 @@
 <country>Spain</country>
 </info>
 ```
- 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+```cat > skils.xml```
+```git add 'skills.xml'; git commit -m “cretae_skils_xml”;```
+```cat >> skils.xml```
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <skills>test design techniques, working with Terminal, mySQL, Postman, Android studio</skills>
 ```
- 32. Сделать коммит в одну строку. 	```git add .; git commit -m “cretae_skils_xml”;```
+ 32. Сделать коммит в одну строку. 	```git commit -a -m “cretae_skils&preference_xml”;```
  33. Отправить сразу 2 файла на внешний репозиторий. 	```git push```
  34. На веб интерфейсе создать файл bug_report.xml.
  35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
@@ -91,7 +95,7 @@
 количество домашних животных 1
 будущая желаемая зарплата 1000
 ```
- 8. Отправить изменения на внешний репозиторий.	```git add new.txt; git commit -m "update_txt"; git push```
+ 8. Отправить изменения на внешний репозиторий.	```git commit -a -m "update_txt"; git push```
  9. Создать файл preferences.txt.  ```cat > preferences.txt```
  10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
  ```
@@ -102,7 +106,7 @@
 страна Испания
 ```
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT ```cat > skills.txt
-git add .;git commit -m "create_skills";```
+git add .;git commit -m "create_skills_and_preferences";```
  ```cat >> skills.txt``` 
 Информация о скиллах: техники тест-дизайна, работа с БД, Terminal, Postman, Android Studio
 ^C
