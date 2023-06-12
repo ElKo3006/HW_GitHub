@@ -9,7 +9,7 @@ git branch CheckLists
 git branch Bug_Reports
 git branch SQL
 git branch Charles
-git branch Mobile testing
+git branch Mobile_testing
 ``` 
 2. Запушить все ветки на внешний репозиторий  ```git push --all```
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта  ```cat > structureBR.txt```
